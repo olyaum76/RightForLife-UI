@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { useAuthChecker } from '../../helpers/useAuthChecker';
+import { BE_URL } from '../../rootConstants';
 
 export const LoginPage = () => {
   const history = useHistory();
-  const authApi = 'http://localhost:4000/auth/signin';
+  const authApi = `${BE_URL}/auth/signin`;
   const isUserLoggedIn = useAuthChecker();
 
   const [isPasswordCanBeSeen, setIsPasswordCanBeSeen] = useState(false);
