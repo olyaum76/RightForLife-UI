@@ -1,5 +1,5 @@
 // export const BE_URL = 'http://localhost:4000';
-export const BE_URL = 'https://rigth-for-life-be.herokuapp.com/';
+export const BE_URL = 'https://rigth-for-life-be.herokuapp.com';
 
 export const API = Object.freeze({
   HOME: {
